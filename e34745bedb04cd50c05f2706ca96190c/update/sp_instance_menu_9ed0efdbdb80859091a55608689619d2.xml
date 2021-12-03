@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_menu">
+    <sp_instance_menu action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column/>
+        <sp_widget/>
+        <sys_class_name>sp_instance_menu</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2021-12-01 14:25:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9ed0efdbdb80859091a55608689619d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TSP Menu</sys_name>
+        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_update_name>sp_instance_menu_9ed0efdbdb80859091a55608689619d2</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2021-12-01 14:25:50</sys_updated_on>
+        <title>TSP Menu</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_menu>
+    <sys_translated_text action="delete_multiple" query="documentkey=9ed0efdbdb80859091a55608689619d2"/>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2021-12-01 14:23:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fa30a79bdb80859091a55608689619aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sp_instance_menu</sys_name>
+        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_update_name>sys_scope_privilege_fa30a79bdb80859091a55608689619aa</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2021-12-01 14:23:00</sys_updated_on>
+        <target_name>sp_instance_menu</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>
