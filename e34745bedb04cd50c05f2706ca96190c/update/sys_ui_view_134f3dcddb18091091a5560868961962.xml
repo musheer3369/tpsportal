@@ -6,19 +6,19 @@
         <roles/>
         <sys_class_name>sys_ui_view</sys_class_name>
         <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-        <sys_created_on>2021-12-06 12:33:24</sys_created_on>
+        <sys_created_on>2021-12-06 17:48:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>4a17b885db98c51091a55608689619e2</sys_id>
+        <sys_id>134f3dcddb18091091a5560868961962</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>tsp</sys_name>
+        <sys_name>Tsp</sys_name>
         <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
-        <sys_update_name>sys_ui_view_4a17b885db98c51091a55608689619e2</sys_update_name>
+        <sys_update_name>sys_ui_view_134f3dcddb18091091a5560868961962</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2021-12-06 12:33:24</sys_updated_on>
-        <title>tsp</title>
+        <sys_updated_on>2021-12-06 17:48:53</sys_updated_on>
+        <title>Tsp</title>
         <user/>
     </sys_ui_view>
 </record_update>

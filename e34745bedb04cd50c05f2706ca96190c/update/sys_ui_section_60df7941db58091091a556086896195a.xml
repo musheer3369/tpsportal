@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="60df7941db58091091a556086896195a" sys_domain="8eba0beedb423200ddad70e21f9619df" table="incident" version="3" view="tsp">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+            <sys_created_on>2021-12-06 17:52:53</sys_created_on>
+            <sys_id>bd3006c1db58091091a556086896198d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="134f3dcddb18091091a5560868961962">60df7941db58091091a556086896195a</sys_ui_section>
+            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+            <sys_updated_on>2021-12-06 17:52:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>1</position>
+            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+            <sys_created_on>2021-12-06 17:52:53</sys_created_on>
+            <sys_id>3d3006c1db58091091a556086896198e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="134f3dcddb18091091a5560868961962">60df7941db58091091a556086896195a</sys_ui_section>
+            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+            <sys_updated_on>2021-12-06 17:52:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+            <sys_created_on>2021-12-06 17:52:53</sys_created_on>
+            <sys_id>b13006c1db58091091a556086896198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="134f3dcddb18091091a5560868961962">60df7941db58091091a556086896195a</sys_ui_section>
+            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+            <sys_updated_on>2021-12-06 17:52:53</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_location</element>
+            <position>3</position>
+            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+            <sys_created_on>2021-12-06 17:52:53</sys_created_on>
+            <sys_id>393006c1db58091091a556086896198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="134f3dcddb18091091a5560868961962">60df7941db58091091a556086896195a</sys_ui_section>
+            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+            <sys_updated_on>2021-12-06 17:52:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+            <sys_created_on>2021-12-06 17:51:09</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>8eba0beedb423200ddad70e21f9619df</sys_domain>
+            <sys_domain_path>!!!/!!!/!!!/!!!/!!!/</sys_domain_path>
+            <sys_id>60df7941db58091091a556086896195a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+            <sys_update_name>sys_ui_section_60df7941db58091091a556086896195a</sys_update_name>
+            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+            <sys_updated_on>2021-12-06 17:51:09</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Tsp" name="tsp">134f3dcddb18091091a5560868961962</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
