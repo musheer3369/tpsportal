@@ -482,8 +482,10 @@ var c = this;
 	  data.isValid =true;
 	var hasRecordAccess = true;//data.sys_id == "-1" ? rec.canCreate() : data.canWrite;
 	data.canAttach = true; //hasRecordAccess && gs.hasRole(gs.getProperty('glide.attachment.role')) /*&& 	
+	console.log(data);
 	data.f = $sp.getForm(data.table, data.sys_id, data.query, data.view);
-	
+	console.log('FF');
+	console.log(data.f);
 
 	// Activity formatter is hardcoded to set specific options
 	for (var f in data.f._formatters) {
@@ -598,7 +600,7 @@ var c = this;
         <sys_created_on>2021-12-06 12:40:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ea8f001dbd8c51091a556086896194d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>TSP  Form Widget</sys_name>
         <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
@@ -606,7 +608,7 @@ var c = this;
         <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_widget_9ea8f001dbd8c51091a556086896194d</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2021-12-06 12:40:36</sys_updated_on>
+        <sys_updated_on>2021-12-06 18:29:58</sys_updated_on>
         <template><![CDATA[<div ng-if="::!data.isValid && !data.emptyStateTemplate" class="panel panel-default">
   <div class="panel-body wrapper-lg text-center">
     <span ng-if="!data.tableUnsupported">${Record not found}</span>
