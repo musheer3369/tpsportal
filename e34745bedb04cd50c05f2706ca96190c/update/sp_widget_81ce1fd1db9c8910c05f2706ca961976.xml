@@ -92,7 +92,7 @@
 			show_new: false,
 			show_title: true,
 			enable_filter:true,
-			short_description: "My Workstations"
+			short_description: "Cash Recyclers"
 		};
 
 
@@ -124,57 +124,7 @@
 
 		data.dataTable2 = $sp.getWidget('rsp-data-table-temp', table2Params);
 	}
-	if (options.table_3) {
-		var grlb3 = new GlideRecordSecure(options.table_3);
-		data.button3 = (options.table_3_title) || grlb3.getLabel();
-
-		var table3Params = {
-			table: (options.table_3),
-			fields: (options.table_3_fields) || data.field_list,
-			filter: (options.table_3_filter),
-			p: data.p || 1,
-			o: data.o,
-			d: data.d,
-			q: data.q,
-			window_size: data.window_size || 10,
 	
-			show_breadcrumbs: true,
-			hide_header: false,
-			show_keywords: true,
-			show_new: false,
-			show_title: true,
-			enable_filter:true,
-			short_description:"My Network Gear"
-		};
-
-
-		data.dataTable3 = $sp.getWidget('rsp-data-table-temp', table3Params);
-	}
-	if (options.table_4) {
-		var grlb4 = new GlideRecordSecure(options.table_4);
-		data.button4 = (options.table_4_title) || grlb4.getLabel();
-
-		var table4Params = {
-			table: (options.table_4),
-			fields: (options.table_4_fields) || data.field_list,
-			filter: (options.table_4_filter),
-			p: data.p || 1,
-			o: data.o,
-			d: data.d,
-			q: data.q,
-			window_size: data.window_size || 10,
-	
-			show_breadcrumbs: true,
-			hide_header: false,
-			show_keywords: true,
-			show_new: false,
-			show_title: true,
-			enable_filter:true
-		};
-
-
-		//data.dataTable4 = $sp.getWidget('rsp-data-table-temp', table4Params);
-	}
 })();
 ]]></script>
         <servicenow>false</servicenow>
@@ -183,7 +133,7 @@
         <sys_created_on>2021-12-07 19:24:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81ce1fd1db9c8910c05f2706ca961976</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>TSP Tabbed Table</sys_name>
         <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
@@ -191,7 +141,7 @@
         <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_widget_81ce1fd1db9c8910c05f2706ca961976</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2021-12-07 19:26:33</sys_updated_on>
+        <sys_updated_on>2021-12-07 19:46:11</sys_updated_on>
         <template><![CDATA[<div id="tab-tbl" ng-controller="listController">
 <div class="carousel" id="tblCarousel">
 	<div id="" class="tab-tbl-header">
