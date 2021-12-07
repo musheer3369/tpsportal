@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">2ceed795db9c8910c05f2706ca961980</sp_column>
+        <sp_widget display_value="TSP Tabbed Table">81ce1fd1db9c8910c05f2706ca961976</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2021-12-07 19:24:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>aceed795db9c8910c05f2706ca961983</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_update_name>sp_instance_aceed795db9c8910c05f2706ca961983</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2021-12-07 19:32:45</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"table_1": {
+		"value": "cmdb_ci",
+		"displayValue": "cmdb_ci"
+	},
+	"table_1_title": {
+		"value": "Cash Recylers",
+		"displayValue": "Cash Recylers"
+	},
+	"table_1_fields": {
+		"value": "name,company,model_id,os,serial_number,warranty_expiration,install_status,u_patch_schedule",
+		"displayValue": "name,company,model_id,os,serial_number,warranty_expiration,install_status,u_patch_schedule"
+	},
+	"table_1_filter": {
+		"value": "sys_class_name=cmdb_ci_computer^install_status!=7",
+		"displayValue": "sys_class_name=cmdb_ci_computer^install_status!=7"
+	},
+	"table_2": {
+		"value": "cmdb_ci",
+		"displayValue": "cmdb_ci"
+	},
+	"table_2_title": {
+		"value": "Servers",
+		"displayValue": "Servers"
+	},
+	"table_2_fields": {
+		"value": "name,company,model_id,os,serial_number,warranty_expiration,install_status,u_patch_schedule",
+		"displayValue": "name,company,model_id,os,serial_number,warranty_expiration,install_status,u_patch_schedule"
+	},
+	"table_2_filter": {
+		"value": "GOTOsys_class_nameLIKEserver^install_status!=7",
+		"displayValue": "GOTOsys_class_nameLIKEserver^install_status!=7"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=aceed795db9c8910c05f2706ca961983"/>
+</record_update>
