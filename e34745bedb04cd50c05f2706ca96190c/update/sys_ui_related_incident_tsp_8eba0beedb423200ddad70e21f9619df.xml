@@ -2,59 +2,17 @@
     <sys_ui_related sys_domain="8eba0beedb423200ddad70e21f9619df" table="incident" version="2" view="tsp">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Incident - tsp" name="incident" related_list="NULL" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">d0198759db988910c05f2706ca961952</list_id>
+            <list_id display_value="Incident - tsp" name="incident" related_list="NULL" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">8e0a1359db5c8910c05f2706ca961929</list_id>
             <order_by/>
             <position>0</position>
-            <related_list>task_time_worked.task</related_list>
+            <related_list/>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2021-12-07 17:49:39</sys_created_on>
-            <sys_id>94198759db988910c05f2706ca961954</sys_id>
+            <sys_created_on>2021-12-07 19:03:46</sys_created_on>
+            <sys_id>ce0a1359db5c8910c05f2706ca96192b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2021-12-07 17:49:39</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="Incident - tsp" name="incident" related_list="NULL" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">d0198759db988910c05f2706ca961952</list_id>
-            <order_by/>
-            <position>1</position>
-            <related_list>incident.parent_incident</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2021-12-07 17:49:39</sys_created_on>
-            <sys_id>18198759db988910c05f2706ca961955</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2021-12-07 17:49:39</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="Incident - tsp" name="incident" related_list="NULL" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">d0198759db988910c05f2706ca961952</list_id>
-            <order_by/>
-            <position>2</position>
-            <related_list>REL:a144a26fdbfd7e406d7070e21f96196f</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2021-12-07 17:49:39</sys_created_on>
-            <sys_id>9c198759db988910c05f2706ca961955</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2021-12-07 17:49:39</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="Incident - tsp" name="incident" related_list="NULL" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">d0198759db988910c05f2706ca961952</list_id>
-            <order_by/>
-            <position>3</position>
-            <related_list>change_request.parent</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2021-12-07 17:49:39</sys_created_on>
-            <sys_id>14198759db988910c05f2706ca961956</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2021-12-07 17:49:39</sys_updated_on>
+            <sys_updated_on>2021-12-07 19:03:46</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Incident - tsp</calculated_name>
@@ -65,11 +23,11 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2021-12-07 17:49:39</sys_created_on>
+            <sys_created_on>2021-12-07 19:03:46</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>8eba0beedb423200ddad70e21f9619df</sys_domain>
             <sys_domain_path>!!!/!!!/!!!/!!!/!!!/</sys_domain_path>
-            <sys_id>d0198759db988910c05f2706ca961952</sys_id>
+            <sys_id>8e0a1359db5c8910c05f2706ca961929</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Incident - tsp</sys_name>
             <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
@@ -78,7 +36,7 @@
             <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
             <sys_update_name>sys_ui_related_incident_tsp_8eba0beedb423200ddad70e21f9619df</sys_update_name>
             <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2021-12-07 17:49:39</sys_updated_on>
+            <sys_updated_on>2021-12-07 19:03:46</sys_updated_on>
             <sys_user/>
             <view display_value="tsp" name="tsp">57984319db988910c05f2706ca9619ad</view>
             <view_name/>
