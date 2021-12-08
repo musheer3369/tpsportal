@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="DELETE">
+        <sp_angular_provider display_value="rpAccountService">1ad17799db6d13006c8e5ec0cf9619f6</sp_angular_provider>
+        <sp_widget display_value="TSP  Data Table temp">c46cfbd5dbd0c910c05f2706ca96197b</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2021-12-08 14:56:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>86faefe9db50c15091a5560868961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>rpAccountService.TSP  Data Table temp</sys_name>
+        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_86faefe9db50c15091a5560868961909</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2021-12-08 14:56:15</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</application>
+        <file_path/>
+        <instance_id>d22192526f90e244869e7b2f5d3ee476</instance_id>
+        <instance_name>ricohusadev</instance_name>
+        <name>m2m_sp_ng_pro_sp_widget_86faefe9db50c15091a5560868961909</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="rpAccountService">1ad17799db6d13006c8e5ec0cf9619f6</sp_angular_provider><sp_widget display_value="TSP  Data Table temp">c46cfbd5dbd0c910c05f2706ca96197b</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by><sys_created_on>2021-12-08 14:56:15</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>86faefe9db50c15091a5560868961909</sys_id><sys_mod_count>0</sys_mod_count><sys_name>rpAccountService.TSP  Data Table temp</sys_name><sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_86faefe9db50c15091a5560868961909</sys_update_name><sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by><sys_updated_on>2021-12-08 14:56:15</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+        <payload_hash>-404298735</payload_hash>
+        <record_name>rpAccountService.TSP  Data Table temp</record_name>
+        <reverted_from/>
+        <source>73956a0cdb9ccd9091a5560868961929</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2021-12-08 14:56:15</sys_created_on>
+        <sys_id>86faefe9db50c15091a556086896190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d9a8b884a0000001</sys_recorded_at>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2021-12-08 14:56:15</sys_updated_on>
+        <type>Angular Providers</type>
+        <update_guid>8efaefe93250c15073ab43fbfe39d80b</update_guid>
+        <update_guid_history>8efaefe93250c15073ab43fbfe39d80b:-404298735</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2021-12-08 09:56:39">f70ba32ddb50c15091a5560868961917</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2021-12-08 14:56:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="m2m_sp_ng_pro_sp_widget">m2m_sp_ng_pro_sp_widget</sys_db_object>
+        <sys_id>3d903a94d5d14ff496301abcbc5a0810</sys_id>
+        <sys_metadata>86faefe9db50c15091a5560868961909</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>rpAccountService.TSP  Data Table temp</sys_name>
+        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_scope_delete display_value="">a1c19b8b317e4728ac3ec000d4ba5a40</sys_scope_delete>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_86faefe9db50c15091a5560868961909</sys_update_name>
+        <sys_update_version display_value="m2m_sp_ng_pro_sp_widget_86faefe9db50c15091a5560868961909">86faefe9db50c15091a556086896190c</sys_update_version>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2021-12-08 14:56:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
