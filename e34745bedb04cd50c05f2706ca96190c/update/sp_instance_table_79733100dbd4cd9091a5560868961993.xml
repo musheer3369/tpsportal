@@ -5,7 +5,7 @@
         <color>default</color>
         <css/>
         <display_field>number</display_field>
-        <field_list>number,u_customer_ticket,short_description,u_serial_number,u_service_product_name,opened_at,u_location,u_ft_state,u_sub_state</field_list>
+        <field_list>number,u_customer_ticket,company,short_description,u_serial_number,u_service_product_name,opened_at,u_location,u_ft_state,u_sub_state</field_list>
         <filter table="incident">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
@@ -26,7 +26,7 @@
         <sys_created_on>2021-12-03 14:23:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>79733100dbd4cd9091a5560868961993</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>TSP Incidents</sys_name>
         <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_instance_table_79733100dbd4cd9091a5560868961993</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2021-12-03 14:49:15</sys_updated_on>
+        <sys_updated_on>2021-12-08 16:58:17</sys_updated_on>
         <table>incident</table>
         <title>TSP Incidents</title>
         <url/>
