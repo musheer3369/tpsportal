@@ -43,7 +43,7 @@
         <update_guid_history>046cfbd58bd0c910564fa12a3b97e586:-1435923447</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 2021-12-08 08:36:36">5fb8df6ddb5c815091a55608689619e3</sys_audit_delete>
+        <sys_audit_delete display_value="">5fb8df6ddb5c815091a55608689619e3</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
         <sys_created_on>2021-12-08 13:36:36</sys_created_on>

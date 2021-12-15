@@ -607,53 +607,12 @@ tbody tr:last-child {&#13;
         <roles>snc_external,snc_internal</roles>
         <script><![CDATA[(function() {
 	
-	data.selectAccounts = false;
-	var accounts = VisibleAccounts();	
-		data.AccountsData = accounts;	
+var accounts = VisibleAccounts();
 	
-	
+	data.AccountsData = accounts;
 	
 	if (!input) // asynch load list
-		return;
-	
-			
-			var grs = new GlideRecord("sys_user");
-			grs.get(gs.getUserID());
-			var x ={};
-			x.name = grs.company.getDisplayValue("name");
-			x.value = String(grs.company);	
-	    
-			data.myCompany = x;			
-	   
-	if(input.AccountsData)
-		{
-		data.AccountsData = input.AccountsData;	
-		}	
-	
-	if(input.searchStr)
-		{			
-		var accounts=[];
-		var grc = new GlideRecordSecure("core_company");
-		grc.addActiveQuery();
-		grc.addNotNullQuery("name");	  
-		grc.addEncodedQuery('u_site_idSTARTSWITH'+input.searchStr+'^ORnameSTARTSWITH'+input.searchStr);	
-		grc.addEncodedQuery("sys_domain!=global^ORsys_domain=NULL");	
-		grc.setLimit(30);
-		grc.orderBy("name");
-		grc.query();		
-		while(grc.next())
-			{		
-				var obj ={};
-				
-				obj.name = grc.getDisplayValue('name');
-				obj.value = grc.getDisplayValue('sys_id');
-				accounts.push(obj);
-			}	
-			data.accounts = accounts;				
-			//return;
-			
-		}
-	
+		return;	
 	
 	optCopy(['table', 'p', 'o', 'd', 'filter', 'filterACLs', 'fields', 'keywords', 'view','short_description','enable_filter']);
 	optCopy(['relationship_id', 'apply_to', 'apply_to_sys_id']);
@@ -687,16 +646,7 @@ tbody tr:last-child {&#13;
 	data.page_index = data.p - 1;
 	data.show_new = data.show_new || options.show_new;
 
-	
-	
-		/*if (gs.getProperty("glide.security.ui.filter") == "true" || GlideTableDescriptor.get(data.table).getED().hasAttribute("glide.security.ui.filter"))
-	{
-		gr = new FilteredGlideRecord(data.table);
-		gr.applyRowSecurity();
-	}
-	else*/
-		gr = new GlideRecordSecure(data.table);
-	
+	gr = new GlideRecordSecure(data.table);	
 	
 	if (!gr.isValid()) {
 		data.invalid_table = true;
@@ -734,21 +684,24 @@ tbody tr:last-child {&#13;
 	data.window_end = (data.page_index + 1) * data.window_size;
 	gr.chooseWindow(data.window_start, data.window_end);	
 	
+
 	if(data.AccountsData)
 		{
 		gr.addEncodedQuery("company.sys_idIN" + data.AccountsData);
 		}
 	else
 		{
-			gr.addQuery("company.sys_id",data.myCompany.value);
-			
+			gr.addQuery("company.sys_id",data.myCompany.value);			
 		}
+	
+	
 	// filter exclude from portal
 	if(data.table == "incident"){
 		gr.addQuery("u_non_service_portal","false");	
 	}
-	//console.log("encoded query");
-//	console.log(gr.getEncodedQuery());
+	console.log("encoded query");
+	
+	console.log(gr.getEncodedQuery());
 	gr._query();
 
 	data.row_count = gr.getRowCount();
@@ -830,7 +783,7 @@ console.log("data.filter");
         <sys_created_on>2021-12-03 13:37:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>51092940db54cd9091a55608689619b7</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>TSP  Data Table</sys_name>
         <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
@@ -838,7 +791,7 @@ console.log("data.filter");
         <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_widget_51092940db54cd9091a55608689619b7</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2021-12-08 17:03:31</sys_updated_on>
+        <sys_updated_on>2021-12-15 18:54:54</sys_updated_on>
         <template><![CDATA[<div  class="row ricoh-panel" ng-init="c.init()">
       <widget id="breadcrumbs"></widget>
   		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4" ng-include="'tspKeywordSearch'">         
