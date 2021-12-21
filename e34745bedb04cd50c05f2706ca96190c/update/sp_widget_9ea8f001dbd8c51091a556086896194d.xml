@@ -601,7 +601,7 @@ var c = this;
         <sys_created_on>2021-12-06 12:40:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ea8f001dbd8c51091a556086896194d</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>TSP  Form Widget</sys_name>
         <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
@@ -609,7 +609,7 @@ var c = this;
         <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_widget_9ea8f001dbd8c51091a556086896194d</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2021-12-21 00:25:32</sys_updated_on>
+        <sys_updated_on>2021-12-21 02:40:01</sys_updated_on>
         <template><![CDATA[<div ng-if="::!data.isValid && !data.emptyStateTemplate" class="panel panel-default">
   <div class="panel-body wrapper-lg text-center">
     <span ng-if="!data.tableUnsupported">${Record not found}</span>
@@ -698,7 +698,7 @@ var c = this;
         </div>
       </div>
       <!-- related lists -->
-      <div ng-if="!data.hideRelatedLists && c.isInternal">
+      <div >
         <label style="margin: 0">Related Lists..</label>
         <div style="margin-bottom: 7px; padding-bottom: 7px; border-bottom: 1px solid #f5f5f5;">
           <span ng-repeat="rl in data.f._related_lists" ng-if="rl.visible">
@@ -722,7 +722,7 @@ var c = this;
               ng-class="::getButtonClass(action)" gsft_id="{{::action.sys_id}}">{{action.name}}</button>
       <span>{{status}}</span>
     
-     <div  ><widget id="rsp-resolve-incident" ></widget>     
+     <div  >    
     <div>   
     <button ng-if="getPrimaryAction()" type="submit"
               ng-click="triggerUIAction(getPrimaryAction())" ng-disabled="submitting" 
