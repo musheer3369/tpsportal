@@ -76,7 +76,7 @@
         <sys_created_on>2021-12-01 14:13:25</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5a0ed797db80859091a55608689619ff</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>TSP Header</sys_name>
         <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
@@ -84,15 +84,13 @@
         <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_header_footer_5a0ed797db80859091a55608689619ff</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2021-12-20 21:27:58</sys_updated_on>
+        <sys_updated_on>2021-12-21 02:30:41</sys_updated_on>
         <template><![CDATA[<div class="white-backdrop">
   <div class="container-fluid">
     <div  style="display:flex;justify-content:space-between"  >     
       <div >
          <a ng-class="{'header-brand-logo':portal.logo}"  href="?id={{portal.homepage_dv}}">
-            <span ng-if="!portal.logo" class="inverse">{{portal.title}}</span>
-            <img style="max-width:300px" class="img-responsive" alt="Responsive image" 
-                 ng-if="portal.logo" ng-src="{{portal.logo}}"  />
+             <img src="Ricoh%20Logo.jpg" width="160" height="62"/> 
           </a>  
       </div>
       <div>
