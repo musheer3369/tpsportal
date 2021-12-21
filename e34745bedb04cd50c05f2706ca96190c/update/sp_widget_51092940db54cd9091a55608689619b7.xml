@@ -19,6 +19,7 @@
 	 * fields (string) = comma seperated list of fields that become the list columns
 	 * view (string) = the default view to load for columns, overrides fields
 	*/
+	/*
 $select=	$('#my-accounts').selectize({
 		valueField:'value',labelField:'name',searchField:'name',loadingClass:'loading...',
 							    placeholder:'Search an Account',
@@ -55,7 +56,7 @@ $select=	$('#my-accounts').selectize({
 			console.log("Query Search 2 Error: ");
 		});		  
 		return deferred.promise;
-		}	
+		}	*/
 	
 		
     $scope.options.show_keywords=true;
@@ -86,11 +87,8 @@ $select=	$('#my-accounts').selectize({
 			c.data.list[x].selected = false;
 		}
 		item.selected = true;
-		
-		//window.open('/rsp?id=rsp_form&table=' + $scope.data.table + '&sys_id=' + item.sys_id + '&view=');
 		window.open('/' +  $scope.portal.url_suffix + '?id=tsp_form&table=' + $scope.data.table + '&sys_id=' + item.sys_id + '&view=tsp');
 		
-	//	$scope.$emit(eventNames.click, parms);
 	};
 
 	$scope.newRecord = function(){
@@ -106,6 +104,7 @@ $select=	$('#my-accounts').selectize({
 	};
 
 	function recoverStateFromUrl() {
+	
 		$scope.data.fields = [];
 		var s = $location.search();
 		for (var x in keys) {
@@ -164,6 +163,7 @@ $select=	$('#my-accounts').selectize({
 				setPermalink(f.table, f.filter, f.o, f.d, f.p);
 
 			if ($scope.options.show_breadcrumbs && data.filterBreadcrumbs)
+					console.log("HERE" + data.filterBreadcrumbs.data);
 				$scope.$broadcast('widget-filter-breadcrumbs.setBreadcrumbs', data.filterBreadcrumbs.data);
 
 			initRecordWatcher(f.table, f.filter);
@@ -237,6 +237,7 @@ $select=	$('#my-accounts').selectize({
 	});
 
 	$scope.$on('widget-filter-breadcrumbs.queryModified', function(e, newFilter){
+		
 		$scope.data.filter = newFilter;
 	//	$scope.loadingData = true;
 		$scope.setSearch(true);
@@ -622,9 +623,7 @@ var accounts = VisibleAccounts();
 		data.invalid_table = true;
 		data.table_label = "";
 		return;
-	}
-
-	
+	}	
 	
 	if (!data.fields) {
 		if (data.view)
@@ -769,7 +768,7 @@ console.log("data.filter");
         <sys_created_on>2021-12-03 13:37:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>51092940db54cd9091a55608689619b7</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_name>TSP  Data Table</sys_name>
         <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
@@ -777,7 +776,7 @@ console.log("data.filter");
         <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_widget_51092940db54cd9091a55608689619b7</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2021-12-16 11:58:37</sys_updated_on>
+        <sys_updated_on>2021-12-21 13:33:52</sys_updated_on>
         <template><![CDATA[<div  class="row ricoh-panel" ng-init="c.init()">
       <widget id="breadcrumbs"></widget>
   		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4" ng-include="'tspKeywordSearch'">         
