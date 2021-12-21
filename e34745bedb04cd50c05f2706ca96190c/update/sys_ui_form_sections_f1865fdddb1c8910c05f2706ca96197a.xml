@@ -17,16 +17,44 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
             <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+            <sys_created_on>2021-12-21 01:59:20</sys_created_on>
+            <sys_domain>8eba0beedb423200ddad70e21f9619df</sys_domain>
+            <sys_domain_path>!!!/!!!/!!!/!!!/!!!/</sys_domain_path>
+            <sys_id>10d5bb29dbac4190c05f2706ca9619fd</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">f1865fdddb1c8910c05f2706ca96197a</sys_ui_form>
+            <sys_ui_section caption="Dispatch Info" display_value="Dispatch Info" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">0cd5bb29dbac4190c05f2706ca9619c3</sys_ui_section>
+            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+            <sys_updated_on>2021-12-21 01:59:21</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
             <sys_created_on>2021-12-07 18:48:28</sys_created_on>
             <sys_domain>8eba0beedb423200ddad70e21f9619df</sys_domain>
             <sys_domain_path>!!!/!!!/!!!/!!!/!!!/</sys_domain_path>
             <sys_id>39865fdddb1c8910c05f2706ca961980</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="incident" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">f1865fdddb1c8910c05f2706ca96197a</sys_ui_form>
             <sys_ui_section caption="Details" display_value="Details" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">31865fdddb1c8910c05f2706ca961978</sys_ui_section>
             <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2021-12-07 18:48:28</sys_updated_on>
+            <sys_updated_on>2021-12-21 01:59:21</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+            <sys_created_on>2021-12-21 01:59:20</sys_created_on>
+            <sys_domain>8eba0beedb423200ddad70e21f9619df</sys_domain>
+            <sys_domain_path>!!!/!!!/!!!/!!!/!!!/</sys_domain_path>
+            <sys_id>d8d5fb29dbac4190c05f2706ca961902</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">f1865fdddb1c8910c05f2706ca96197a</sys_ui_form>
+            <sys_ui_section caption="Closure Info" display_value="Closure Info" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">4cd5bb29dbac4190c05f2706ca9619c6</sys_ui_section>
+            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+            <sys_updated_on>2021-12-21 01:59:20</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>incident</name>
