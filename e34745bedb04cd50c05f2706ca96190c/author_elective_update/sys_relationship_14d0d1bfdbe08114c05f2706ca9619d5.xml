@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="DELETE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>incident</basic_apply_to>
+        <basic_query_from>cmdb_ci_hardware</basic_query_from>
+        <insert_callback/>
+        <name>Hardware Info for CI</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+	
+gs.info("DEBUG: HW");
+	// Add your code here, such as current.addQuery(field, value);
+	// Add your code here, such as current.addQuery(field, value);
+	current.addQuery('serial_number', parent.u_serial_number);
+	gs.info("DEBUG HW QUERY:" + current.getEncodedQuery());
+
+})(current, parent);]]></query_with>
+        <reference_field>change_control</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2021-12-27 13:45:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>14d0d1bfdbe08114c05f2706ca9619d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Hardware Info for CI</sys_name>
+        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_update_name>sys_relationship_14d0d1bfdbe08114c05f2706ca9619d5</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2021-12-27 13:46:55</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="DELETE" query="documentkey=14d0d1bfdbe08114c05f2706ca9619d5"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</application>
+        <file_path/>
+        <instance_id>d22192526f90e244869e7b2f5d3ee476</instance_id>
+        <instance_name>ricohusadev</instance_name>
+        <name>sys_relationship_14d0d1bfdbe08114c05f2706ca9619d5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_relationship"&gt;&lt;sys_relationship action="INSERT_OR_UPDATE"&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;apply_to/&gt;&lt;basic_apply_to&gt;incident&lt;/basic_apply_to&gt;&lt;basic_query_from&gt;cmdb_ci_hardware&lt;/basic_query_from&gt;&lt;insert_callback/&gt;&lt;name&gt;Hardware Info for CI&lt;/name&gt;&lt;query_from/&gt;&lt;query_with&gt;&lt;![CDATA[(function refineQuery(current, parent) {
+	
+gs.info("DEBUG: HW");
+	// Add your code here, such as current.addQuery(field, value);
+	// Add your code here, such as current.addQuery(field, value);
+	current.addQuery('serial_number', parent.u_serial_number);
+	gs.info("DEBUG HW QUERY:" + current.getEncodedQuery());
+
+})(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field&gt;change_control&lt;/reference_field&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Mohammad.Ahmed@mindshift.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-12-27 13:45:24&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;14d0d1bfdbe08114c05f2706ca9619d5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hardware Info for CI&lt;/sys_name&gt;&lt;sys_package display_value="Tidel Service Portal" source="x_mst_tsp"&gt;e34745bedb04cd50c05f2706ca96190c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Tidel Service Portal"&gt;e34745bedb04cd50c05f2706ca96190c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_14d0d1bfdbe08114c05f2706ca9619d5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Mohammad.Ahmed@mindshift.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-12-27 13:46:55&lt;/sys_updated_on&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=14d0d1bfdbe08114c05f2706ca9619d5"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1146273690</payload_hash>
+        <record_name>Hardware Info for CI</record_name>
+        <reverted_from/>
+        <source>5666c93fdb9c0510c05f2706ca961984</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2021-12-27 13:46:55</sys_created_on>
+        <sys_id>a341d9ffdbe08114c05f2706ca961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17dfc24e1230000001</sys_recorded_at>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2021-12-27 13:46:55</sys_updated_on>
+        <type>Relationship</type>
+        <update_guid>2b41d9ffade08114e3b01955745a5d43</update_guid>
+        <update_guid_history>2b41d9ffade08114e3b01955745a5d43:1146273690,21f09d7f28e08114eb249e9e42c0d98f:-324404099</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2021-12-27 14:32:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_relationship">sys_relationship</sys_db_object>
+        <sys_id>9fae15a30abd49fe8bb30986cecf2884</sys_id>
+        <sys_metadata>14d0d1bfdbe08114c05f2706ca9619d5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hardware Info for CI</sys_name>
+        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_parent display_value="Incident">038faef0db2132004efafbec0f961923</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_scope_delete display_value="">a1c19b8b317e4728ac3ec000d4ba5a40</sys_scope_delete>
+        <sys_update_name>sys_relationship_14d0d1bfdbe08114c05f2706ca9619d5</sys_update_name>
+        <sys_update_version display_value="sys_relationship_14d0d1bfdbe08114c05f2706ca9619d5">a341d9ffdbe08114c05f2706ca961944</sys_update_version>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2021-12-27 14:32:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
