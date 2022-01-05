@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
     <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
         <sp_angular_provider display_value="rpAccountService">1ad17799db6d13006c8e5ec0cf9619f6</sp_angular_provider>
-        <sp_widget display_value="TSP  Data Table">51092940db54cd9091a55608689619b7</sp_widget>
+        <sp_widget display_value="RSA  Data Table">51092940db54cd9091a55608689619b7</sp_widget>
         <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
         <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
         <sys_created_on>2021-12-03 13:37:36</sys_created_on>
@@ -9,10 +9,10 @@
         <sys_id>1509ad40db54cd9091a55608689619c6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>rpAccountService.Copy of RSP  Data Table</sys_name>
-        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>m2m_sp_ng_pro_sp_widget_1509ad40db54cd9091a55608689619c6</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
         <sys_updated_on>2021-12-03 13:37:36</sys_updated_on>

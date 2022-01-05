@@ -478,7 +478,7 @@ tbody tr:last-child {&#13;
         <docs/>
         <field_list>title,maximum_entries,glyph,color,sp_page,field_list,table,filter,order,order_by,order_direction</field_list>
         <has_preview>false</has_preview>
-        <id>tsp-data-table</id>
+        <id>rsa-data-table</id>
         <internal>false</internal>
         <link><![CDATA[function(scope, element, attrs, ctrl){
 	var $ul, $contextMenu;
@@ -602,7 +602,7 @@ tbody tr:last-child {&#13;
 		});
 	}
 }]]></link>
-        <name>TSP  Data Table</name>
+        <name>RSA  Data Table</name>
         <option_schema>[{"name":"title","default_value":"My Incidents","label":"title","type":"string"}]</option_schema>
         <public>false</public>
         <roles>snc_external,snc_internal</roles>
@@ -768,15 +768,15 @@ console.log("data.filter");
         <sys_created_on>2021-12-03 13:37:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>51092940db54cd9091a55608689619b7</sys_id>
-        <sys_mod_count>35</sys_mod_count>
-        <sys_name>TSP  Data Table</sys_name>
-        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>RSA  Data Table</sys_name>
+        <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_widget_51092940db54cd9091a55608689619b7</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2021-12-21 13:33:52</sys_updated_on>
+        <sys_updated_on>2022-01-05 10:36:54</sys_updated_on>
         <template><![CDATA[<div  class="row ricoh-panel" ng-init="c.init()">
       <widget id="breadcrumbs"></widget>
   		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4" ng-include="'tspKeywordSearch'">         

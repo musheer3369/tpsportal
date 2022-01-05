@@ -20,7 +20,7 @@
         <size>md</size>
         <sp_column display_value="1">f3533100dbd4cd9091a5560868961906</sp_column>
         <sp_page/>
-        <sp_widget display_value="TSP Data Table from Instance">aaa23dc8db94cd9091a55608689619b5</sp_widget>
+        <sp_widget display_value="RSA Data Table from Instance">aaa23dc8db94cd9091a55608689619b5</sp_widget>
         <sys_class_name>sp_instance_table</sys_class_name>
         <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
         <sys_created_on>2021-12-03 14:23:15</sys_created_on>
@@ -28,10 +28,10 @@
         <sys_id>79733100dbd4cd9091a5560868961993</sys_id>
         <sys_mod_count>8</sys_mod_count>
         <sys_name>TSP Incidents</sys_name>
-        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_instance_table_79733100dbd4cd9091a5560868961993</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
         <sys_updated_on>2021-12-21 02:42:32</sys_updated_on>

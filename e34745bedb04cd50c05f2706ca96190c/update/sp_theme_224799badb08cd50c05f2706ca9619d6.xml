@@ -3,22 +3,22 @@
         <css_variables/>
         <footer/>
         <footer_fixed>true</footer_fixed>
-        <header display_value="TSP Header">5a0ed797db80859091a55608689619ff</header>
-        <name>Tidel Theme</name>
+        <header display_value="RSA Header">5a0ed797db80859091a55608689619ff</header>
+        <name>RSA Theme</name>
         <navbar_fixed>true</navbar_fixed>
         <sys_class_name>sp_theme</sys_class_name>
         <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
         <sys_created_on>2021-11-29 15:08:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>224799badb08cd50c05f2706ca9619d6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Tidel Theme</sys_name>
-        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>RSA Theme</sys_name>
+        <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_theme_224799badb08cd50c05f2706ca9619d6</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2021-12-01 14:22:55</sys_updated_on>
+        <sys_updated_on>2022-01-05 10:35:42</sys_updated_on>
     </sp_theme>
 </record_update>

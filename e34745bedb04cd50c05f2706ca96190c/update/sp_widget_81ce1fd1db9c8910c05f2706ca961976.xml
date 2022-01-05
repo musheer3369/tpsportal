@@ -60,12 +60,12 @@
         <docs/>
         <field_list/>
         <has_preview>true</has_preview>
-        <id>tsp-tabbed-table</id>
+        <id>rsa-tabbed-table</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) { 
 
  }]]></link>
-        <name>TSP Tabbed Table</name>
+        <name>RSA Tabbed Table</name>
         <option_schema>[{"hint":"system name of table","name":"table_1","label":"Table 1","type":"string"},{"hint":"tab display name","name":"table_1_title","label":"Table 1 Title","type":"string"},{"hint":"comma separated","name":"table_1_fields","label":"Table 1 Fields","type":"string"},{"name":"table_1_filter","label":"Table 1 Filter","type":"string"},{"name":"table_2","label":"Table 2","type":"string"},{"hint":"tab display name","name":"table_2_title","label":"Table 2 Title","type":"string"},{"hint":"comma separated","name":"table_2_fields","label":"Table 2 Fields","type":"string"},{"name":"table_2_filter","label":"Table 2 Filter","type":"string"},{"name":"table_3","label":"Table 3","type":"string"},{"hint":"tab display name","name":"table_3_title","label":"Table 3 Title","type":"string"},{"hint":"comma separated","name":"table_3_fields","label":"Table 3 Fields","type":"string"},{"name":"table_3_filter","label":"Table 3 Filter","type":"string"},{"name":"table_4","label":"Table 4","type":"string"},{"hint":"tab display name","name":"table_4_title","label":"Table 4 Title","type":"string"},{"hint":"comma separated","name":"table_4_fields","label":"Table 4 Fields","type":"string"},{"name":"table_4_filter","label":"Table 4 Filter","type":"string"}]</option_schema>
         <public>false</public>
         <roles/>
@@ -122,7 +122,7 @@
 		};
 
 
-		data.dataTable2 = $sp.getWidget('tsp-data-table-temp', table2Params);
+		data.dataTable2 = $sp.getWidget('rsa-data-table-temp', table2Params);
 	}
 	
 })();
@@ -133,15 +133,15 @@
         <sys_created_on>2021-12-07 19:24:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>81ce1fd1db9c8910c05f2706ca961976</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>TSP Tabbed Table</sys_name>
-        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>RSA Tabbed Table</sys_name>
+        <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_widget_81ce1fd1db9c8910c05f2706ca961976</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2021-12-08 16:14:44</sys_updated_on>
+        <sys_updated_on>2022-01-05 10:39:07</sys_updated_on>
         <template><![CDATA[<div id="tab-tbl" ng-controller="listController">
 <div class="carousel" id="tblCarousel">
 	<div id="" class="tab-tbl-header">

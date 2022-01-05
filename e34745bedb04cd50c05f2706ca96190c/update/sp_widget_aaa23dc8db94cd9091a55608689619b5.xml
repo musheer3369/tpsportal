@@ -16,10 +16,10 @@
         <docs/>
         <field_list>title,table,filter,maximum_entries,order_direction,glyph,field_list,color,order_by,sp_page</field_list>
         <has_preview>false</has_preview>
-        <id>tsp-data-table-from-instance</id>
+        <id>rsa-data-table-from-instance</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
-        <name>TSP Data Table from Instance</name>
+        <name>RSA Data Table from Instance</name>
         <option_schema/>
         <public>false</public>
         <roles>snc_external,snc_internal</roles>
@@ -80,7 +80,7 @@
 	console.log("widgetParams");
 	console.log(widgetParams);
 	//take the data table from global because some API calls not supported such as glidedatadescriptior etc.
-	data.dataTableWidget = $sp.getWidget('tsp-data-table', widgetParams);
+	data.dataTableWidget = $sp.getWidget('rsa-data-table', widgetParams);
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -88,15 +88,15 @@
         <sys_created_on>2021-12-03 14:19:45</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>aaa23dc8db94cd9091a55608689619b5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>TSP Data Table from Instance</sys_name>
-        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>RSA Data Table from Instance</sys_name>
+        <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_widget_aaa23dc8db94cd9091a55608689619b5</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2021-12-03 14:21:10</sys_updated_on>
+        <sys_updated_on>2022-01-05 10:38:40</sys_updated_on>
         <template><![CDATA[<div> 
   <div class="alert alert-danger" ng-if="data.invalid_table">
     ${Table not defined} '{{data.table_label}}'

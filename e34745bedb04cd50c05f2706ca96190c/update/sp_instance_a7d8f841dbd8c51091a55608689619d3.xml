@@ -11,7 +11,7 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="1">67d8f841dbd8c51091a55608689619d0</sp_column>
-        <sp_widget display_value="TSP  Form Widget">9ea8f001dbd8c51091a556086896194d</sp_widget>
+        <sp_widget display_value="RSA  Form Widget">9ea8f001dbd8c51091a556086896194d</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
         <sys_created_on>2021-12-06 12:41:09</sys_created_on>
@@ -19,10 +19,10 @@
         <sys_id>a7d8f841dbd8c51091a55608689619d3</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Form</sys_name>
-        <sys_package display_value="Tidel Service Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Tidel Service Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_instance_a7d8f841dbd8c51091a55608689619d3</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
         <sys_updated_on>2021-12-06 12:41:43</sys_updated_on>
