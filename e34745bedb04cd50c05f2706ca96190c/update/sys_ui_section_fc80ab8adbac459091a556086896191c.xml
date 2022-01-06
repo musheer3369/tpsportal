@@ -4,13 +4,13 @@
             <element>cmdb_ci.name</element>
             <position>0</position>
             <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2021-12-22 13:46:58</sys_created_on>
-            <sys_id>fb51234edbac459091a55608689619d2</sys_id>
+            <sys_created_on>2022-01-05 16:13:20</sys_created_on>
+            <sys_id>18294cf2dbf0c19491a55608689619ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">fc80ab8adbac459091a556086896191c</sys_ui_section>
             <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2021-12-22 13:46:58</sys_updated_on>
+            <sys_updated_on>2022-01-05 16:13:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>cmdb_ci.serial_number</element>
             <position>1</position>
             <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2021-12-22 13:46:58</sys_created_on>
-            <sys_id>7f51234edbac459091a55608689619d2</sys_id>
+            <sys_created_on>2022-01-05 16:13:20</sys_created_on>
+            <sys_id>98298cf2dbf0c19491a5560868961931</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">fc80ab8adbac459091a556086896191c</sys_ui_section>
             <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2021-12-22 13:46:58</sys_updated_on>
+            <sys_updated_on>2022-01-05 16:13:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,55 +32,97 @@
             <element>cmdb_ci.location</element>
             <position>2</position>
             <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2021-12-22 13:46:58</sys_created_on>
-            <sys_id>ff51234edbac459091a55608689619d2</sys_id>
+            <sys_created_on>2022-01-05 16:13:20</sys_created_on>
+            <sys_id>10298cf2dbf0c19491a5560868961932</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">fc80ab8adbac459091a556086896191c</sys_ui_section>
             <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2021-12-22 13:46:58</sys_updated_on>
+            <sys_updated_on>2022-01-05 16:13:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cmdb_ci.u_r12_access_start</element>
+            <position>3</position>
+            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+            <sys_created_on>2022-01-05 16:13:20</sys_created_on>
+            <sys_id>94298cf2dbf0c19491a5560868961932</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">fc80ab8adbac459091a556086896191c</sys_ui_section>
+            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+            <sys_updated_on>2022-01-05 16:13:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2021-12-22 13:46:58</sys_created_on>
-            <sys_id>7351234edbac459091a55608689619d3</sys_id>
+            <sys_created_on>2022-01-05 16:13:20</sys_created_on>
+            <sys_id>1c298cf2dbf0c19491a5560868961932</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">fc80ab8adbac459091a556086896191c</sys_ui_section>
             <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2021-12-22 13:46:58</sys_updated_on>
+            <sys_updated_on>2022-01-05 16:13:20</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>cmdb_ci.asset_tag</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2021-12-22 13:46:58</sys_created_on>
-            <sys_id>f351234edbac459091a55608689619d3</sys_id>
+            <sys_created_on>2022-01-05 16:13:20</sys_created_on>
+            <sys_id>90298cf2dbf0c19491a5560868961933</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">fc80ab8adbac459091a556086896191c</sys_ui_section>
             <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2021-12-22 13:46:58</sys_updated_on>
+            <sys_updated_on>2022-01-05 16:13:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>cmdb_ci.model_id</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2021-12-22 13:46:58</sys_created_on>
-            <sys_id>7751234edbac459091a55608689619d3</sys_id>
+            <sys_created_on>2022-01-05 16:13:20</sys_created_on>
+            <sys_id>18298cf2dbf0c19491a5560868961933</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">fc80ab8adbac459091a556086896191c</sys_ui_section>
             <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2021-12-22 13:46:58</sys_updated_on>
+            <sys_updated_on>2022-01-05 16:13:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cmdb_ci.u_r12_access_days</element>
+            <position>7</position>
+            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+            <sys_created_on>2022-01-05 16:13:20</sys_created_on>
+            <sys_id>9c298cf2dbf0c19491a5560868961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">fc80ab8adbac459091a556086896191c</sys_ui_section>
+            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+            <sys_updated_on>2022-01-05 16:13:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cmdb_ci.u_r12_access_end</element>
+            <position>8</position>
+            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+            <sys_created_on>2022-01-05 16:13:20</sys_created_on>
+            <sys_id>14298cf2dbf0c19491a5560868961934</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="incident" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">fc80ab8adbac459091a556086896191c</sys_ui_section>
+            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+            <sys_updated_on>2022-01-05 16:13:20</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
