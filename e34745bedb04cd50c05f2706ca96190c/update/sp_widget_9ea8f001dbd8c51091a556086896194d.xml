@@ -181,7 +181,9 @@ var c = this;
 
   function openRelatedList(e, queryString) {
     // todo: Open this in a modal
-    $location.search(queryString);
+    //$location.search(queryString);
+	  console.log("OPEN RELATED LIST");
+	  $window.open(queryString, "_blank");
     e.preventDefault();
   }
 
@@ -230,10 +232,6 @@ var c = this;
   }, true);
 
   function hideRelatedLists() {
-	  
-
-	  
-	  
     if (!$scope.data.f._related_lists)
       return true;
 
@@ -607,7 +605,7 @@ var c = this;
         <sys_created_on>2021-12-06 12:40:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ea8f001dbd8c51091a556086896194d</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>RSA  Form Widget</sys_name>
         <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
@@ -615,7 +613,7 @@ var c = this;
         <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_widget_9ea8f001dbd8c51091a556086896194d</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2022-01-05 20:03:41</sys_updated_on>
+        <sys_updated_on>2022-01-06 21:06:09</sys_updated_on>
         <template><![CDATA[<div ng-if="::!data.isValid && !data.emptyStateTemplate" class="panel panel-default">
   <div class="panel-body wrapper-lg text-center">
     <span ng-if="!data.tableUnsupported">${Record not found}</span>
@@ -708,11 +706,11 @@ var c = this;
         <label style="margin: 0">Related Lists..</label>
         <div style="margin-bottom: 7px; padding-bottom: 7px; border-bottom: 1px solid #f5f5f5;">
           <span ng-repeat="rl in data.f._related_lists" ng-if="rl.visible">
-            <a class="h4" ng-if="rl.type != 'REL'" ng-href="?id=lf&table={{::rl.table}}&filter={{rl.field}}%3D{{data.f.sys_id}}&view={{data.f.view}}" 
+            <a class="h4" ng-if="rl.type != 'REL'" target = "_blank" ng-href="?id=lf&table={{::rl.table}}&filter={{rl.field}}%3D{{data.f.sys_id}}&view={{data.f.view}}" 
                ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', filter: '{{rl.field}}%3D{{data.f.sys_id}}'})">{{rl.plural}}
               <span class="label label-as-badge label-primary" ng-if="rl.count">{{::rl.count}}</span>
             </a>
-            <a ng-if="::rl.type == 'REL'" href="?id=lf&table={{::rl.table}}&relationship_id={{rl.relationship_id}}&apply_to={{rl.apply_to}}&apply_to_sys_id={{rl.apply_to_sys_id}}&view={{::data.f.view}}" target="_blank" ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', apply_to: '{{rl.apply_to}}', apply_to_sys_id: '{{rl.apply_to_sys_id}}', relationship_id: '{{rl.relationship_id}}'})">{{rl.label}}
+            <a ng-if="::rl.type == 'REL'" href="?id=lf&table={{::rl.table}}&relationship_id={{rl.relationship_id}}&apply_to={{rl.apply_to}}&apply_to_sys_id={{rl.apply_to_sys_id}}&view={{::data.f.view}}"  ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', apply_to: '{{rl.apply_to}}', apply_to_sys_id: '{{rl.apply_to_sys_id}}', relationship_id: '{{rl.relationship_id}}'})">{{rl.label}}
               <span class="label label-as-badge label-primary" ng-if="rl.count">{{rl.count}}</span>
             </a>
             <span ng-if="!$last" style="padding-left: .5em; padding-right: .5em;" aria-hidden="true"> | </span>
@@ -722,7 +720,7 @@ var c = this;
     </div>
 
     <div class="panel-footer" >
-      
+      <a href="/rsa" class="btn action-btn btn-primary">Cancel</a>
       <button ng-click="triggerUIAction(action)" ng-disabled="submitting"
               ng-repeat="action in getUIActions('button')" class="btn action-btn"
               ng-class="::getButtonClass(action)" gsft_id="{{::action.sys_id}}">{{action.name}}</button>
@@ -741,11 +739,7 @@ var c = this;
            
      
       
-      <div style="clear: both;"></div>
-      <div ng-if="mandatory.length" class="alert alert-info" style="margin-top: .5em" aria-live="polite" aria-atomic="true">
-        <span ng-if="mandatory.length > 0">${Required information} </span>
-        <span ng-repeat="f in mandatory" class="label sc-field-error-label" ng-bind="f.label"></span>
-      </div>
+     
     </div>
   </div>
 </div>
