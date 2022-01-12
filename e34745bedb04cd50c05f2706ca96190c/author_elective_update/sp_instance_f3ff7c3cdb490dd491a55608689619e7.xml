@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">b3ff7c3cdb490dd491a55608689619e5</sp_column>
+        <sp_widget display_value="Form">fd1f4ec347730200ba13a5554ee490c0</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2022-01-12 01:20:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f3ff7c3cdb490dd491a55608689619e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Form</sys_name>
+        <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_update_name>sp_instance_f3ff7c3cdb490dd491a55608689619e7</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2022-01-12 01:20:55</sys_updated_on>
+        <title>Form</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"empty_state_template": "empty-state-list-form.html",
+	"sys_id_required": "true"
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=f3ff7c3cdb490dd491a55608689619e7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</application>
+        <file_path/>
+        <instance_id>d22192526f90e244869e7b2f5d3ee476</instance_id>
+        <instance_name>ricohusadev</instance_name>
+        <name>sp_instance_f3ff7c3cdb490dd491a55608689619e7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;b3ff7c3cdb490dd491a55608689619e5&lt;/sp_column&gt;&lt;sp_widget display_value="Form"&gt;fd1f4ec347730200ba13a5554ee490c0&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Mohammad.Ahmed@mindshift.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-01-12 01:20:55&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;f3ff7c3cdb490dd491a55608689619e7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Form&lt;/sys_name&gt;&lt;sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp"&gt;e34745bedb04cd50c05f2706ca96190c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Ricoh Service Advantage Portal"&gt;e34745bedb04cd50c05f2706ca96190c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_f3ff7c3cdb490dd491a55608689619e7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Mohammad.Ahmed@mindshift.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-01-12 01:20:55&lt;/sys_updated_on&gt;&lt;title&gt;Form&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"empty_state_template": "empty-state-list-form.html",
+	"sys_id_required": "true"
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=f3ff7c3cdb490dd491a55608689619e7"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1741776970</payload_hash>
+        <record_name>Form</record_name>
+        <reverted_from/>
+        <source>5666c93fdb9c0510c05f2706ca961984</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2022-01-12 01:20:55</sys_created_on>
+        <sys_id>40004d3cdb490dd491a55608689619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e4bdfa5590000001</sys_recorded_at>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2022-01-12 01:20:55</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>48004d3cf4490dd405ff0d0f5fe7d1e9</update_guid>
+        <update_guid_history>48004d3cf4490dd405ff0d0f5fe7d1e9:1741776970</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2022-01-11 20:28:14">c7a18970db890dd491a5560868961911</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2022-01-12 01:28:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>6524fd0724e543b7a2de56e04fece389</sys_id>
+        <sys_metadata>f3ff7c3cdb490dd491a55608689619e7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Form</sys_name>
+        <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_scope_delete display_value="">a1c19b8b317e4728ac3ec000d4ba5a40</sys_scope_delete>
+        <sys_update_name>sp_instance_f3ff7c3cdb490dd491a55608689619e7</sys_update_name>
+        <sys_update_version display_value="sp_instance_f3ff7c3cdb490dd491a55608689619e7">40004d3cdb490dd491a55608689619ea</sys_update_version>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2022-01-12 01:28:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
