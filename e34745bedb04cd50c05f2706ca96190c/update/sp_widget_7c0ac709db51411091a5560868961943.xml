@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>standard</category>
+        <client_script><![CDATA[function($scope) {
+  /* widget controller */
+  var c = this;
+
+	c.config = {
+		saveFilter:false,loadFilter:false,
+		outputType: "encoded_query",
+		fieldList:  getFieldList(),
+		closeFilter: true,
+		encodedQuery: massageEncodedQuery(c.data.initialQuery),
+		manageFiltersLink: "?id=lf&table=sys_filter",
+		dotWalking:false
+		
+	};
+	
+	function getFieldList()
+	{
+		if(c.data.table == 'incident')
+			{
+				return ["number","u_customer_ticket","u_sr_reference_id","company",
+					 "state","short_description",
+					   "sys_updated_on","opened_at","closed_at","u_sub_state","u_location","u_serial_number","cmdb_ci","location"];
+			}
+		else if(c.data.table == 'cmdb_ci_computer')
+			{
+				return ["name","serial_number","model_id","computer","install_status","sys_class_name","warranty_expiration","company"];
+			}
+		else if(c.data.table == 'cmdb_ci_server')
+			{
+				return ["name","serial_number","model_id","computer","install_status","sys_class_name","warranty_expiration","company"];
+			}
+		else if(c.data.table == 'cmdb_ci_netgear')
+			{
+				return ["name","serial_number","model_id","computer","install_status","sys_class_name","warranty_expiration","company"];
+			}
+		else if(c.data.table == 'sc_request'){
+			return ["caller_id","number","opened_by","company","active",
+					 "state","short_description","contact_type",
+					 "parent_incident","sys_updated_on","opened_at","closed_at","location"];
+		}
+	}
+
+	function massageEncodedQuery(encodedQuery) {
+		return (encodedQuery) ? encodedQuery.replace(/CONTAINS/g, "LIKE").replace(/DOES NOT CONTAIN/g, "NOT LIKE") : encodedQuery;
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>rsa-incident-sn-desktop-filter</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>RSA Incident SN Desktop Filter</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.table =  options.table || $sp.getParameter("table");		
+	data.initialQuery =  options.initialQuery || $sp.getParameter("filter");	
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2022-01-25 16:18:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7c0ac709db51411091a5560868961943</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>RSA Incident SN Desktop Filter</sys_name>
+        <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_update_name>sp_widget_7c0ac709db51411091a5560868961943</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2022-01-25 16:22:46</sys_updated_on>
+        <template><![CDATA[<div>
+	<sn-filter-widget uid="c.data.table" table="{{c.data.table}}" filter-config="c.config" />
+</div>]]></template>
+    </sp_widget>
+</record_update>

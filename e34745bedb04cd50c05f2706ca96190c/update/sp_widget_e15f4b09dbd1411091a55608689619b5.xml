@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>standard</category>
+        <client_script><![CDATA[function ($scope, $timeout){
+	var eventNames = {
+		setBreadcrumbs: 'widget-filter-breadcrumbs.setBreadcrumbs'
+	};
+
+	$scope.adjustFilter = function(breadcrumb, remove){
+		var newQuery = remove ? breadcrumb.ifRemoved : breadcrumb.value;
+		$scope.$emit('widget-filter-breadcrumbs.queryModified', newQuery);
+	}
+
+	$scope.$on(eventNames.setBreadcrumbs, function(e, data, newQuery){
+		$scope.data = data;
+		$scope.$broadcast("snfilter:initialize_query", massageEncodedQuery(newQuery));
+	});
+
+	$scope.clickFilter = function() {
+		$scope.showFilter = !$scope.showFilter;
+	}
+
+	$scope.showFilter = false;
+	$scope.$on("snbreadcrumbs:toggle_filter", function(e) {
+		e.stopPropagation();
+		e.preventDefault();
+		$scope.showFilter = false;
+	});
+
+	$scope.$on("snfilter:update_query", function(e, query) {
+		e.stopPropagation();
+		e.preventDefault();
+		$scope.$emit('widget-filter-breadcrumbs.queryModified', massageEncodedQuery(query));
+		$scope.showFilter = false;
+	});
+
+	function massageEncodedQuery(query) {
+		return (query) ? query.replace(/CONTAINS/g, "LIKE").replace(/DOES NOT CONTAIN/g, "NOT LIKE") : query;
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.btn-select{&#13;
+ color:black;&#13;
+  background-color:green;&#13;
+}&#13;
+&#13;
+.breadcrumbs {&#13;
+  margin-left: 9px;&#13;
+  margin-bottom: 3px;&#13;
+}&#13;
+&#13;
+.icon-filter {&#13;
+  font-size: 20px;&#13;
+  text-decoration: inherit; /* no underline */&#13;
+}&#13;
+&#13;
+.ng-filter-widget {&#13;
+  .modal {&#13;
+    .manage-filters-button {&#13;
+      top: 15px;&#13;
+    }&#13;
+&#13;
+    .input-group-radio {&#13;
+      input {&#13;
+        margin-left: 0;&#13;
+      }&#13;
+    }&#13;
+&#13;
+    .input-group-transparent {&#13;
+      position: relative;&#13;
+&#13;
+      .input-group-addon-transparent {&#13;
+        position: absolute;&#13;
+        font-size: 18px;&#13;
+        top: 2px;&#13;
+        left: 8px;&#13;
+      }&#13;
+&#13;
+      input {&#13;
+        border-radius: 9999px;&#13;
+        padding-left: 28px;&#13;
+      }&#13;
+    }&#13;
+&#13;
+    ul {&#13;
+      padding: 0 5px 10px;&#13;
+&#13;
+      li {&#13;
+        button {&#13;
+          background-color: inherit;&#13;
+        }&#13;
+&#13;
+        a {&#13;
+          width: 100%;&#13;
+          overflow: hidden;&#13;
+          text-overflow: ellipsis;&#13;
+          white-space: nowrap;&#13;
+          display: block;&#13;
+          padding: 7px 20px;&#13;
+          text-decoration: none;&#13;
+          cursor: pointer;&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  }&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>rsa-filter-breadcrumbs</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>RSA  Filter Breadcrumbs</name>
+        <option_schema>[{"hint":"Table to be used to generate breadcrumbs","name":"table","section":"Data","label":"Table","type":"string"},{"name":"query","section":"Data","label":"Query","type":"string"},{"hint":"If enabled, a filter button prompt will be added to the breadcrumb list","name":"enable_filter","default_value":"false","section":"Behavior","label":"Enable Filter","type":"boolean"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+		
+		
+	var table = options.table ;	
+	
+	var query = options.query  || "";	
+	
+	data.breadcrumbs = $sp.getFilterBreadcrumbs(table, query, null);
+	data.enable_filter = true;//input.enable_filter || options.enable_filter == true || options.enable_filter == "true";
+	if (data.enable_filter)
+		data.filterWidget = $sp.getWidget('rsa-incident-sn-desktop-filter', {
+			table: table,
+			initialQuery : query
+		});
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2022-01-25 16:41:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e15f4b09dbd1411091a55608689619b5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>RSA  Filter Breadcrumbs</sys_name>
+        <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_update_name>sp_widget_e15f4b09dbd1411091a55608689619b5</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2022-01-25 16:42:05</sys_updated_on>
+        <template><![CDATA[<div class="breadcrumbs"> 
+  <button type="button"
+          role="button"         
+          ng-click="clickFilter()"
+          title="Show / hide filter"
+          class="icon-filter btn btn-link"
+          tabindex="0"
+          data-original-title="Show / hide filter"><span class="sr-only">${Show / hide filter}</span> </button>
+  <span ng-repeat="crumb in data.breadcrumbs track by crumb.value">
+    <a href="javascript:void(0)" ng-if="!$first" class="sp-breadcrumb-link sp-breadcrumb-remove-condition" ng-click="adjustFilter(crumb, true)">&gt;</a>
+    <a href="javascript:void(0)" class="sp-breadcrumb-link" ng-click="adjustFilter(crumb, false)">{{crumb.label}}</a>
+  </span>
+</div>
+
+<div >
+  <span  ng-show="showFilter">
+    <sp-widget widget="data.filterWidget"></sp-widget>
+  </span>
+</div>]]></template>
+    </sp_widget>
+</record_update>
