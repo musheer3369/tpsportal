@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>modalTemplate</id>
+        <sp_widget display_value="RSA  Form Widget">9ea8f001dbd8c51091a556086896194d</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2022-01-16 23:36:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e7f75edadbc50550c05f2706ca96190c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>modalTemplate</sys_name>
+        <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
+        <sys_update_name>sp_ng_template_e7f75edadbc50550c05f2706ca96190c</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2022-01-17 07:11:00</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+ <div class="panel-heading">
+ <h4 class="panel-title">Modal Window</h4>
+   </div>
+ <div class="panel-body wrapper-xl">
+ Do you really want to cancel the incident?
+   </div>
+ <div class="panel-footer text-right">
+   <button class="btn btn-primary" ng-click="c.uiAction('cancel_incident'); c.closeModal()">Cancel incident</button>
+ <button class="btn btn-primary" ng-click="c.closeModal()">Close</button>
+ </div>; 
+ </div>]]></template>
+    </sp_ng_template>
+</record_update>

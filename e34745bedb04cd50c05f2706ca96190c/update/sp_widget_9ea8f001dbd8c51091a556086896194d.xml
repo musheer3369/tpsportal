@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>sp_platform</category>
-        <client_script><![CDATA[function($rootScope, $scope, $timeout, $location, $log, $window, spUtil, nowAttachmentHandler, spAriaUtil, spNavStateManager,glideUserSession) {
+        <client_script><![CDATA[function($rootScope, $scope, $timeout, $location, $log, $window, spUtil, nowAttachmentHandler, spAriaUtil, spNavStateManager,glideUserSession,$uibModal) {
 var c = this;
   $scope.submitting = false;
   $scope.mandatory = [];
@@ -21,6 +21,21 @@ var c = this;
       return count;
     }
   };
+	
+ c.openModal = function() {
+ c.modalInstance = $uibModal.open({
+ templateUrl: 'modalTemplate',
+ scope: $scope
+ });
+ }
+ 
+ c.closeModal = function() {
+ c.modalInstance.close();
+ }
+	c.cancelIncident = function(){
+		
+		c.modalInstance.close();
+	}
 
   $rootScope.$on('$sp.html.editor.progress', function(e, conf) {
       $scope.submitting = conf.state;
@@ -433,10 +448,7 @@ var c = this;
         <script><![CDATA[// form functionality - URL parameter driven
 (function($sp, input, data, options, gs) {
   /* "use strict"; -linter issues */
-  // populate the 'data' variable
-	console.log('OPTIONS');
-	console.log(options);
-	
+  // populate the 'data' variable	
 	data.attachmentUploadSuccessMsg = gs.getMessage("Attachment upload was successful");
 	data.recordAddedMsg = gs.getMessage("Record Added");
 	data.updatedMsg = gs.getMessage("updated_uppercase");
@@ -475,6 +487,23 @@ var c = this;
 		}
 	}
 	
+	if(input && input.action)
+	   {
+		   console.log("CANCEL INCIENT");
+		   gs.info("DEBUG CANCEL");
+		   if(input.action == "cancel_incident"){
+			   console.log("Cancel Incident");
+			   var gr = new GlideRecord('incident');
+		gr.get(data.sys_id);
+
+		gr.setValue('incident_state',7);
+		gr.setValue('close_code','Cancelled');
+		gr.setValue('close_notes','Cancelled from portal');
+		gr.update();
+			   return;
+		   }
+	   }
+	
 	data.query = $sp.getParameter("query") || options.query || "";
 	data.f = {};
 
@@ -482,17 +511,13 @@ var c = this;
 	//-	data.tableUnsupported = false;
 	
 	var frm = $sp.getForm("incident","57984319db988910c05f2706ca9619ad");
-	console.log("FORM");
-	console.log(frm);
 	
-	  data.isValid =true;
+	data.isValid =true;
 	var hasRecordAccess = true;//data.sys_id == "-1" ? rec.canCreate() : data.canWrite;
 	data.canAttach = true; //hasRecordAccess && gs.hasRole(gs.getProperty('glide.attachment.role')) /*&& 	
-	console.log(data);
+	
 	data.f = $sp.getForm(data.table, data.sys_id, data.query, 'tsp');
-	console.log('FF');
-	console.log(data.f);
-
+	
 	// Activity formatter is hardcoded to set specific options
 	for (var f in data.f._formatters) {
 		var fm = data.f._formatters[f];
@@ -521,82 +546,7 @@ var c = this;
 	data.show_escalate=false;
 	data.disable_btn_escalate=false;
 		
-	if (data.table=='incident'){
-		if (gs.getUser().hasRole('itil')){
-			data.show_escalate=false;
-		}
-		else{
-			var gr_user=new GlideRecord('sys_user');
-			gr_user.addQuery('sys_id', gs.getUserID());
-			gr_user.query();
-			
-			if (gr_user.next()){
-				if (gr_user.u_role=='POC' || gr_user.u_role=='Executive' || gr_user.u_role=='Executive Assistant'
-					 || gr_user.u_role=='POC & Exec' || gr_user.u_role=='Secondary POC' || gr_user.u_role=='Technical POC' 
-					 || gr_user.u_role=='VIP' )
-				{
-					data.show_escalate=false;
-				}
-			}			
-		}		 
-	}
-	
-	if (data.table=='incident'){
-		var gr_inc=new GlideRecord('incident');
-		gr_inc.addQuery('sys_id',data.sys_id);
-		gr_inc.query();
 		
-		if (gr_inc.next()){
-			if (gr_inc.state==5 || gr_inc.state==7 || gr_inc.state==6)
-				data.disable_btn_escalate=true;				
-		}
-	}
-	
-	if (data.table=='incident'){
-		 if (input && input.action) {
-		 	var action = input.action;
-			 
-			if (action=='business_critical' || action=='VIP_affected'
-				 || action=='update_required')
-			{
-				gs.info('/// DEBUG action='+action);
-				gr_inc.setValue('state', 5);
-				gr_inc.update();
-				
-				///// Send notification email to incident assignment group
-				if (gr_inc.assignment_group && gr_inc.assignment_group.email)
-				{
-					gs.info('/// DEBUG gr_inc.assignment_group='+gr_inc.assignment_group);
-					
-					var mail = new GlideRecord("sys_email");
-					mail.initialize();
-					mail.mailbox.setDisplayValue("Outbox");
-					mail.recipients = (gr_inc.assignment_group.email);
-					
-
-//					mail.subject = ("Incident "+gr_inc.number+' is Escalated');
-					mail.subject = ('Escalation for '+gr_inc.number +' has been submitted');
-					var mail_body = 'The following incident '+gr_inc.number +' has been escalated regarding "'+gr_inc.short_description +'". \r\n <br/><br/><br/>'
-										+'The reason code selected was "'+action+'" and the status of this incident has been updated to Escalation. \r\n <br/><br/><br/>'
-										+'Please respond to '+gs.getUserDisplayName()+' as soon as possible. \r\n <br/><br/><br/>';// ("Email Template is need HERE");
-
-					mail.body=mail_body;
-					mail.type = "send-ready";
-					mail.content_type = "multipart/mixed";
-					
-					var wm = new GlideRecord('sys_watermark');
-					if (wm.get('source_id', gr_inc.sys_id )){
-						mail.body = mail.body +'\r\n Ref: '+wm.number+'\r\n';
-					}
-						
-					mail.insert(); 
-				///// /Send notification email
-			}
-			 
-		 }
-	}
-}
-	/////////  /add escalate button
 	
 	
 })($sp, input, data, options, gs);]]></script>
@@ -606,7 +556,7 @@ var c = this;
         <sys_created_on>2021-12-06 12:40:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ea8f001dbd8c51091a556086896194d</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>RSA  Form Widget</sys_name>
         <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
@@ -614,7 +564,7 @@ var c = this;
         <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_widget_9ea8f001dbd8c51091a556086896194d</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2022-01-12 02:12:09</sys_updated_on>
+        <sys_updated_on>2022-01-17 07:13:26</sys_updated_on>
         <template><![CDATA[<div ng-if="::!data.isValid && !data.emptyStateTemplate" class="panel panel-default">
   <div class="panel-body wrapper-lg text-center">
     <span ng-if="!data.tableUnsupported">${Record not found}</span>
@@ -664,19 +614,7 @@ var c = this;
       </div>
     </div>
     
-<!-- add escalate button --> 
-<div class="dropdown pull-right" id='btn_escalate' ng-if='c.data.show_escalate'>
-  <button ng-disabled="c.data.disable_btn_escalate" class="btn btn-danger dropdown-toggle " type="button" data-toggle="dropdown">Escalate
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu" style="width:450px; "><div style='margin-left: 3px;'> Why are you escalating this Incident/Why are you escalating this Request? 
-    </div>
-     <li style="margin-left: 3px; margin-top: 10px;" ng-click="c.uiAction('business_critical')">1. This issue is business critical</li>
-    <li style="margin-left: 3px;" ng-click="c.uiAction('VIP_affected')">2. This issue affects a VIP.</li>
-    <li style="margin-left: 3px;" ng-click="c.uiAction('update_required')">3. Urgent Incident requires an update.</li>
-  </ul>
-</div>      
-    
-<!-- /add escalate button -->    
+ 
     
     <div class="panel-body">
       <!-- performance debug -->
@@ -722,6 +660,7 @@ var c = this;
 
     <div class="panel-footer" >
       <a href="/rsa" class="btn action-btn btn-primary">Cancel</a>
+      <button class="btn btn-primary" ng-click="c.openModal()">Cancel Incident</button>
       <button ng-click="triggerUIAction(action)" ng-disabled="submitting"
               ng-repeat="action in getUIActions('button')" class="btn action-btn"
               ng-class="::getButtonClass(action)" gsft_id="{{::action.sys_id}}">{{action.name}}</button>
