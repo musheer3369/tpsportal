@@ -556,7 +556,7 @@ var c = this;
         <sys_created_on>2021-12-06 12:40:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ea8f001dbd8c51091a556086896194d</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>RSA  Form Widget</sys_name>
         <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
         <sys_policy/>
@@ -564,7 +564,7 @@ var c = this;
         <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
         <sys_update_name>sp_widget_9ea8f001dbd8c51091a556086896194d</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2022-01-17 07:13:26</sys_updated_on>
+        <sys_updated_on>2022-01-28 10:29:58</sys_updated_on>
         <template><![CDATA[<div ng-if="::!data.isValid && !data.emptyStateTemplate" class="panel panel-default">
   <div class="panel-body wrapper-lg text-center">
     <span ng-if="!data.tableUnsupported">${Record not found}</span>
@@ -645,11 +645,11 @@ var c = this;
         <label style="margin: 0">Related Lists..</label>
         <div style="margin-bottom: 7px; padding-bottom: 7px; border-bottom: 1px solid #f5f5f5;">
           <span ng-repeat="rl in data.f._related_lists" ng-if="rl.visible">
-            <a class="h4" ng-if="rl.type != 'REL'" target = "_blank" ng-href="?id=rsa_lf&table={{::rl.table}}&filter={{rl.field}}%3D{{data.f.sys_id}}&view={{data.f.view}}" 
-               ng-click="openRelatedList($event, {id: 'rsa_lf', table: '{{::rl.table}}', filter: '{{rl.field}}%3D{{data.f.sys_id}}'})">{{rl.plural}}
+            <a class="h4" ng-if="rl.type != 'REL'" target = "_blank" ng-href="?id=lf&table={{::rl.table}}&filter={{rl.field}}%3D{{data.f.sys_id}}&view={{data.f.view}}" 
+               ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', filter: '{{rl.field}}%3D{{data.f.sys_id}}'})">{{rl.plural}}
               <span class="label label-as-badge label-primary" ng-if="rl.count">{{::rl.count}}</span>
             </a>
-            <a ng-if="::rl.type == 'REL'" href="?id=rsa_lf&table={{::rl.table}}&relationship_id={{rl.relationship_id}}&apply_to={{rl.apply_to}}&apply_to_sys_id={{rl.apply_to_sys_id}}&view={{::data.f.view}}"  ng-click="openRelatedList($event, {id: 'rsa_lf', table: '{{::rl.table}}', apply_to: '{{rl.apply_to}}', apply_to_sys_id: '{{rl.apply_to_sys_id}}', relationship_id: '{{rl.relationship_id}}'})">{{rl.label}}
+            <a ng-if="::rl.type == 'REL'" href="?id=lf&table={{::rl.table}}&relationship_id={{rl.relationship_id}}&apply_to={{rl.apply_to}}&apply_to_sys_id={{rl.apply_to_sys_id}}&view={{::data.f.view}}"  ng-click="openRelatedList($event, {id: 'lf', table: '{{::rl.table}}', apply_to: '{{rl.apply_to}}', apply_to_sys_id: '{{rl.apply_to_sys_id}}', relationship_id: '{{rl.relationship_id}}'})">{{rl.label}}
               <span class="label label-as-badge label-primary" ng-if="rl.count">{{rl.count}}</span>
             </a>
             <span ng-if="!$last" style="padding-left: .5em; padding-right: .5em;" aria-hidden="true"> | </span>
