@@ -2,31 +2,17 @@
     <sys_ui_related sys_domain="8eba0beedb423200ddad70e21f9619df" table="incident" version="2" view="tsp">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Incident - tsp" name="incident" related_list="NULL" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">296cc5b2db7cc19491a55608689619d4</list_id>
+            <list_id display_value="Incident - tsp" name="incident" related_list="NULL" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">92bd23e0dba50110c05f2706ca9619da</list_id>
             <order_by/>
             <position>0</position>
             <related_list>u_part_info.u_task</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2022-01-05 21:07:15</sys_created_on>
-            <sys_id>256c0df2db7cc19491a5560868961919</sys_id>
+            <sys_created_on>2022-02-05 15:52:50</sys_created_on>
+            <sys_id>d6bd27e0dba50110c05f2706ca961936</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2022-01-05 21:07:15</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="Incident - tsp" name="incident" related_list="NULL" sys_domain="8eba0beedb423200ddad70e21f9619df" view="57984319db988910c05f2706ca9619ad">296cc5b2db7cc19491a55608689619d4</list_id>
-            <order_by/>
-            <position>1</position>
-            <related_list>sla_breakdown_core.task</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2022-01-05 21:07:15</sys_created_on>
-            <sys_id>256c0df2db7cc19491a556086896191a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2022-01-05 21:07:15</sys_updated_on>
+            <sys_updated_on>2022-02-05 15:52:50</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Incident - tsp</calculated_name>
@@ -37,20 +23,20 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
-            <sys_created_on>2022-01-05 21:07:15</sys_created_on>
+            <sys_created_on>2022-02-05 15:52:50</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>8eba0beedb423200ddad70e21f9619df</sys_domain>
             <sys_domain_path>!!!/!!!/!!!/!!!/!!!/</sys_domain_path>
-            <sys_id>296cc5b2db7cc19491a55608689619d4</sys_id>
+            <sys_id>92bd23e0dba50110c05f2706ca9619da</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Incident - tsp</sys_name>
             <sys_package display_value="Ricoh Service Advantage Portal" source="x_mst_tsp">e34745bedb04cd50c05f2706ca96190c</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Ricoh Service Advantage Portal">e34745bedb04cd50c05f2706ca96190c</sys_scope>
-            <sys_update_name>sys_ui_related_incident_tsp_296cc5b2db7cc19491a55608689619d4</sys_update_name>
+            <sys_update_name>sys_ui_related_incident_tsp_8eba0beedb423200ddad70e21f9619df</sys_update_name>
             <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-            <sys_updated_on>2022-01-05 21:07:15</sys_updated_on>
+            <sys_updated_on>2022-02-05 15:52:50</sys_updated_on>
             <sys_user/>
             <view display_value="tsp" name="tsp">57984319db988910c05f2706ca9619ad</view>
             <view_name/>
